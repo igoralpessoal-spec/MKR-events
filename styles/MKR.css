@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    background-color: rgb(9, 11, 12);
+    width: 100%;
+    min-height: 100dvh;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+
+main {
+    flex-grow: 1; 
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.001);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    height: 7rem;
+    gap: 3rem;
+    z-index: 1200;
+    position: fixed;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo{
+    width: 10rem;
+    height: auto;
+    filter: drop-shadow(0 0 12px #00aaff);
+}
+
+.menu{
+    margin-right: 30px;
+}
+
+.menu ul{
+    display: flex;
+    gap: 3rem;
+}
+
+.menu ul li a{
+    color: white;
+    font-family: "Roboto Flex", sans-serif;
+    padding: 8px 0;
+    position: relative;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+    font-weight: 150;
+    display: inline-block;
+}
+
+.menu ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #00aaff;
+    transition: width 0.4s ease-in-out;
+}
+
+.menu ul li a:hover::after{
+    width: 100%;
+}
+
+.menu ul li a:hover{
+    transform: scale(1.1);
+}
+
+.hero-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.4rem;
+    width: 100%;
+    height: 10rem;
+    margin-top: 14rem;
+    color: white;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-txt h3{
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.hero-img{
+    background-image: url('../assets/imgs/Hero-img.jpeg');
+    background-attachment: fixed;
+    background-position: 70% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 90px 10vw 90px 10vw;
+    border-radius: 10px;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: transparent; 
+    width: 100%;
+    padding: 60px 0;
+    color: #f0f0f0;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 150; 
+    z-index: 1000; 
+    box-shadow: 0 -2px 5px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+    position: relative;
+    bottom: 0;
+}
+
+.container-rodape {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.top-footer{
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+    max-width: 800px;
+    align-items: flex-start;
+}
+
+.secao-rodape {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: none;
+}
+
+.secao-rodape:last-of-type {
+    border-right: none; 
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.info-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    max-width: 350px; 
+    font-family: "Roboto flex", sans-serif;
+}
+
+.info-contato h2 {
+    color: white; 
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.info-contato p {
+    margin: 0 0 5px 0;
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    text-align: center;
+}
+
+.redes-sociais h3 {
+    margin: 0 0 5px 0;
+    font-size: 0.9em;
+}
+
+.redes-sociais-icones{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+.icone-link {
+    color: #f0f0f0; 
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
+}
+
+.icone-link:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+.icone-link.whatsapp:hover {
+    color: #25D366;
+}
+
+.icone-link.facebook:hover {
+    color: #1877F2;
+}
+
+.icone-link.instagram:hover {
+    color: #E1306C;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 15px;
+    font-size: 0.8em;
+    color: #aaa;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.copyright p {
+    margin: 5px 0;
+}
+
+
+@media (max-width: 1024px) {
+    header {
+        height: 5.5rem;
+    }
+    .logo {
+        width: 7.5rem;
+    }
+    .menu ul {
+        gap: 1.5rem;
+    }
+    .hero-img {
+        margin: 50px 80px;
+        background-position: 70% center;
+    }
+    .hero-txt {
+        margin-top: 9rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 15%;
+        padding: 10px 10px 5px 10px;
+        gap: 0.3rem;
+    }
+    .logo {
+        width: 6.5rem;
+    }
+    .menu {
+        margin-right: 0;
+    }
+    .menu ul {
+        gap: 0.8rem;
+        padding: 0 10px 5px 10px;
+    }
+    
+    .hero-txt {
+        margin-top: 10rem;
+        font-size: 1.2rem;
+        gap: 0.8rem;
+        height: auto;
+        padding: 0 10px;
+    }
+    .hero-txt h3 {
+        font-size: 1.8rem;
+    }
+    .hero-img {
+        margin: 40px 15px;
+        height: 50vh;
+        background-position: 70% center;
+    }
+    
+    /* Ajustes específicos para o Footer em mobile */
+    footer {
+        padding: 40px 0;
+    }
+    .top-footer {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .info-contato {
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+    }
+    .secao-rodape {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+    .secao-rodape:last-of-type {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .container-rodape {
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-txt h3 {
+        font-size: 1.4rem;
+    }
+    .menu ul {
+        gap: 0.6rem;
+    }
+    .hero-img {
+        background-position: 70% center;
+    }
+}
