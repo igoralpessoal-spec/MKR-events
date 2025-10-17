@@ -180,7 +180,7 @@ footer {
 .info-contato h2 {
     color: white; 
     font-size: 1.4em;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .info-contato p {
@@ -308,11 +308,11 @@ footer {
     }
     .hero-img {
         margin: 40px 15px;
+        background-attachment: scroll;
         height: 50vh;
         background-position: 70% center;
     }
     
-    /* Ajustes específicos para o Footer em mobile */
     footer {
         padding: 40px 0;
     }
