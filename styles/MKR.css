@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap&family=BBH+Sans+Bogle&family=Bebas+Neue&family=Shadows+Into+Light&display=swap&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 *{
     padding: 0;
@@ -123,6 +123,124 @@ header{
     font-size: 2rem;
     text-align: center;
 }
+
+.hero{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    width: 100%;
+}
+
+.container-list{
+    display: flex;
+    height: auto;
+    width: 50%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    gap: 5rem;
+    margin-right: 70px;
+}
+
+.container-list h2{
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.lists {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 4rem 4rem;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.lists ul {
+    display: contents;
+}
+
+.lists ul li{
+    margin-bottom: 1.8rem;
+}
+
+.lists ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 180px;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 20px;
+    background: transparent;
+    color: #00f0ff;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+    border: 2px solid rgba(0, 240, 255, 0.6); 
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.15);
+    transition: all 0.3s ease;
+}
+
+.lists ul li a:hover {
+    transform: translateY(-4px);
+    border-color: #00ffff;
+    box-shadow: 0 0 18px rgba(0, 255, 255, 0.4);
+    color: #fff;
+}
+
+.ir-para-btn{
+    height: 6rem;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ir-para-btn a{
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    color: #f0f0f0;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    display: inline-flex; 
+    align-items: center;
+}
+
+.ir-para-btn a i{
+    transition: transform 0.3s ease;
+    margin: 5px;
+    margin-top: 9px;
+}
+
+.ir-para-btn a:hover{
+    transform: scale(103%);
+}
+
+.ir-para-btn a:hover i{
+    transform: translateX(4px);
+}
+
+.img-list{
+    width: 50%rem;
+    height: 35rem;
+    border-radius: 20px;
+    border: 1.5px solid #00aaff;
+    filter: drop-shadow(0 0 12px #00aaff);
+    margin-left: 10rem;
+}
+
 
 footer {
     background-color: transparent; 
@@ -263,19 +381,56 @@ footer {
     header {
         height: 5.5rem;
     }
+
     .logo {
         width: 7.5rem;
     }
+
     .menu ul {
         gap: 1.5rem;
     }
+
     .hero-img {
         margin: 50px 80px;
         background-position: 70% center;
     }
+
     .hero-txt {
         margin-top: 9rem;
         font-size: 1.5rem;
+    }
+
+    .servicos {
+      flex-direction: column;
+      gap: 4rem;
+      padding: 0 5vw;
+    }
+
+    .container-list {
+      width: 100%;
+      margin-right: 0;
+      align-items: center;
+      text-align: center;
+    }
+
+    .ir-para a{
+        width: 100%;
+        margin-right: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-list h2 {
+      font-size: 32px;
+    }
+
+    .lists {
+      gap: 2.5rem;
+      margin-left: 0;
+    }
+
+    .img-list {
+        display: none;
     }
 }
 
@@ -285,12 +440,15 @@ footer {
         padding: 10px 10px 5px 10px;
         gap: 0.3rem;
     }
+
     .logo {
         width: 6.5rem;
     }
+
     .menu {
         margin-right: 0;
     }
+
     .menu ul {
         gap: 0.8rem;
         padding: 0 10px 5px 10px;
@@ -303,29 +461,70 @@ footer {
         height: auto;
         padding: 0 10px;
     }
+
     .hero-txt h3 {
         font-size: 1.8rem;
     }
+
     .hero-img {
         margin: 40px 15px;
         background-attachment: scroll;
         height: 50vh;
         background-position: 70% center;
     }
+
+    .servicos {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      gap: 3rem;
+    }
+
+    .container-list {
+      gap: 3rem;
+    }
+
+    .container-list h2 {
+      font-size: 1.8rem;
+    }
+
+    .lists {
+      gap: 2rem;
+    }
+
+    .lists ul li a {
+      width: 100%;
+      max-width: 250px;
+      font-size: 18px;
+      height: 70px;
+    }
+
+    .ir-para-btn{
+        height: 4rem;
+    }
+
+    .ir-para a {
+        width: 100%;
+        max-width: 250px;
+        font-size: 18px;
+        height: 90px;
+    }
     
     footer {
         padding: 40px 0;
     }
+
     .top-footer {
         flex-direction: column;
         gap: 2rem;
         align-items: center;
     }
+
     .info-contato {
         text-align: center;
         width: 100%;
         max-width: 300px;
     }
+
     .secao-rodape {
         border-right: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -333,11 +532,13 @@ footer {
         margin-bottom: 20px;
         width: 80%;
     }
+
     .secao-rodape:last-of-type {
         border-bottom: none;
         margin-bottom: 0;
         padding-bottom: 0;
     }
+
     .container-rodape {
         padding: 0 20px;
         flex-direction: column;
@@ -354,5 +555,28 @@ footer {
     }
     .hero-img {
         background-position: 70% center;
+    }
+
+    .servicos {
+      gap: 2rem;
+      padding: 0 15px;
+    }
+
+    .container-list h2 {
+      font-size: 1.6rem;
+    }
+
+    .lists {
+      gap: 1.5rem;
+    }
+
+    .lists ul li a {
+      font-size: 16px;
+      height: 60px;
+    }
+
+    .ir-para a {
+      font-size: 16px;
+      height: 60px;
     }
 }
