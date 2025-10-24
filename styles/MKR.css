@@ -567,7 +567,15 @@ footer {
     }
 
     .lists {
-        gap: 1.5rem;
+      gap: 2rem;
+    }
+
+    .left{
+        margin-right: -3rem;
+    }
+
+    .right{
+        margin-right: 3rem;
     }
 
     .lists ul li {
@@ -577,13 +585,15 @@ footer {
     }
 
     .lists ul li a {
-      font-size: 16px;
+      font-size: 14px;
       height: 60px;
-      width: 10rem;
+      width: 9rem;
+      
     }
 
-    .ir-para a {
+    .ir-para-btn a {
       font-size: 16px;
       height: 60px;
+      margin-right: 1.6rem;
     }
 }
